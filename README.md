@@ -290,3 +290,13 @@ If you use GTA in your research, please cite the following paper:
 
 ```
 
+## Serper-compatible endpoints
+
+Set `SERPER_BASE_URL` to the compatible provider base URL and use its key in
+`SERPER_API_KEY`. Unset or empty, the existing `https://google.serper.dev` default
+is preserved. Custom path prefixes are supported; trailing slashes are removed
+before the existing route is appended.
+
+The tool's public `k` argument is sent as the provider's `num` parameter.
+
+Support any Serper.dev-compatible endpoint (like litescrape.com, serpbase.dev, serpensapi.org, and others)
